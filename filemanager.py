@@ -19,7 +19,7 @@ ext = set([x.split(".")[::-1][0] for x in files if "." in x])
 extensions = [x for x in ext if not x.isupper() and len(x) !=0 and not x.isnumeric()]
 
 for ex in extensions:
-	os.system("mkdir "+ex)
+	os.mkdir(ex)
 	thisFiles = [f for f in files if f.endswith(ex)]
 
 	for f in thisFiles:
@@ -29,5 +29,3 @@ for ex in extensions:
 		elif os.name == "posix":
 			move = "mv '{}' ./{}".format(f,ex)
 		os.system(move)
-
-
