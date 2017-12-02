@@ -19,7 +19,7 @@ ext = set([x.split(".")[::-1][0] for x in files if "." in x])
 extensions = [x for x in ext if not x.isupper() and len(x) !=0 and not x.isnumeric()]
 
 for ex in extensions:
-	os.mkdir(ex)
+	os.system("mkdir "+ex)
 	thisFiles = [f for f in files if f.endswith(ex)]
 
 	for f in thisFiles:
