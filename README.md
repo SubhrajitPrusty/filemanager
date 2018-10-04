@@ -1,7 +1,7 @@
 # filemanager
 A simple python script to organize files by extension.
 
-![](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/python-3-blue.svg?style=for-the-badge)
 
 ## Installation
 * `pip install --editable .`
