@@ -40,7 +40,7 @@ setup(name = 'filemanager',
     keywords='file manager manage order', 
     license = 'MIT',
     packages=find_packages(), 
-    install_requires=['click'],
+    install_requires=['click==7.0'],
     entry_points="""
     [console_scripts]
         filemanager=filemanager:run
